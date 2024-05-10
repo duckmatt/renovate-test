@@ -11,20 +11,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.4
-      - name: Renovate 37.239.0
+      - name: Renovate 37.194.4
         uses: renovatebot/github-action@v40.1.11
         with:
-          renovate-version: 37.239.0
+          renovate-version: 37.194.4
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           RENOVATE_ONBOARDING: "false"
           RENOVATE_REQUIRE_CONFIG: optional
           RENOVATE_REPOSITORIES: duckmatt/renovate-test
           LOG_LEVEL: debug
-      - name: Renovate 37.192.4
+      - name: Renovate 37.194.3
         uses: renovatebot/github-action@v40.1.11
         with:
-          renovate-version: 37.192.4
+          renovate-version: 37.194.3
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           RENOVATE_ONBOARDING: "false"
